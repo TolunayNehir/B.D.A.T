@@ -8,7 +8,7 @@ from tkinter import *
 
 def json():
     file=input("Filename:")
-    df = pd.read_json('data.csv')
+    df = pd.read_json(file)
     print("Data has been dataframed")
     print("Type 1 first 5,2 last 5,3 all variables ")
     type1=input("Type:")
@@ -31,7 +31,7 @@ def json():
         print("Analyze finished")
 def csv():
     file=input("Filename:")
-    df = pd.read_csv('data.csv')
+    df = pd.read_csv(file)
     print("Data has been dataframed")
     print("Type 1 first 5,2 last 5,3 all variables ")
     type1=input("Type:")
