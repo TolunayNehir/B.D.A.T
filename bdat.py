@@ -17,7 +17,7 @@ def json():
     elif type1==2:
         print(df.tail())
     elif type1==3:
-        print(df)
+        print(df.to_string())
     else:
         print("Not Found")
     plot=input("Do you want plotting")
@@ -40,7 +40,7 @@ def csv():
     elif type1==2:
         print(df.tail())
     elif type1==3:
-        print(df)
+        print(df.to_string())
     else:
         print("Not Found")
     plot=input("Do you want plotting")
