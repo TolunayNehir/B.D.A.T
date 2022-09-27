@@ -26,7 +26,7 @@ def json():
     file=input("Filename:")
     df = pd.read_json(file)
     print("Data has been dataframed")
-    print("Type 1 first 5,2 last 5,3 all variables ")
+    print("Type 1 first 5,2 last 5,3 all variables,4 info ")
     type1=input("Type:")
     if type1=="1":
         print(df.head().to_string())
@@ -34,6 +34,8 @@ def json():
         print(df.tail().to_string())
     elif type1=="3":
         print(df.to_string())
+    elif type1=="4":
+        print(df.info())
     else:
         print("Not Found")
     plot=input("Do you want plotting:")
@@ -49,7 +51,7 @@ def csv():
     file=input("Filename:")
     df = pd.read_csv(file)
     print("Data has been dataframed")
-    print("Type 1 first 5,2 last 5,3 all variables ")
+    print("Type 1 first 5,2 last 5,3 all variables,4 info ")
     type1=input("Type:")
     if type1=="1":
         print(df.head().to_string())
@@ -57,6 +59,8 @@ def csv():
         print(df.tail().to_string())
     elif type1=="3":
         print(df.to_string())
+    elif type1=="4":
+        print(df.info())
     else:
         print("Not Found")
     plot=input("Do you want plotting:")
